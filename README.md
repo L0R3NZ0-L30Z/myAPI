@@ -4,7 +4,11 @@
 ---
 
 secuencia
+
 . add
+
 . status
+
 . commit
+
 . push
