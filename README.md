@@ -1,3 +1,4 @@
 # myAPI
 
-integrantes osorio, leoz.
+- Integrantes Osorio, Leoz.
+---
