@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/players', async (req, res) => {
   try{
-    
+    res.status(200).send({ message: "trolo de mierda" })
     }catch(e){
       res.status(500).send({'error': 'Internal server error'})
     }
