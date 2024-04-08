@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path'); // Import path module
+const bodyParser = require('body-parser');
 
 const app = express();
 const port = 3000;
@@ -31,9 +32,38 @@ app.get('/players', async (req, res) => {
     }
 })
 
+app.use(bodyParser.json());
+
+app.post('/api/post_data', (req, res) => {
+  // Assuming JSON data is sent in the request body
+  const data = req.body;
+
+  // Process the data as needed (e.g., save to a database)
+  // For demonstration, let's just echo back the received data
+  res.json(data);
+});
 app.get('/boom', async (req, res) => {
   res.status(500).json({ message: "My bad" })
 })
+
+let data = {
+  users: ["tu vieja"],
+  products: {}
+};
+
+// PUT endpoint
+app.put('/api/data/:id', (req, res) => {
+    const id = req.params.id;
+    const newData = req.body;
+
+    // Update the data for the given ID
+    data[id] = newData;
+
+    // Send a response
+    res.json({ message: `Data with ID ${id} updated successfully`, updatedData: newData });
+});
+
+
 
 app.get('/players/salary', async (req, res) => {
   res.status(403).send({
