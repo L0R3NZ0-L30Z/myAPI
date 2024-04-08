@@ -18,6 +18,11 @@ body {
 }
 
 header {
+    
+    background-image: url('hola.jpg'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+
     background-color: #005eff;
     color: #fff;
     padding: 50px 0;
