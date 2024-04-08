@@ -1,11 +1,63 @@
-body{
-    font-family: 'square';
-    line-height: 1.6;
-    padding: 20px;
-    
-    background-color: aqua;
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.main {
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #005eff;
+    color: #fff;
+    padding: 50px 0;
     text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 50px 0;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #005eff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #005eff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
 }
