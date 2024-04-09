@@ -4,9 +4,13 @@ header{
 }
 
 body {
+    width: 85%;
+    left: 7.5%;
+    right: 7.5%;
+    overflow: hidden;
     padding-top: 30px;
     font-family: Arial, sans-serif;
-    padding: 20px;
+    margin: 0
   }
 .faa{
     background-color: #f7f7f7;
@@ -39,8 +43,10 @@ body {
     place-items: center;
     font-family: calibri;
     /*letter-spacing: 2px;*/
-    
-    width: 85%;x
+    left: 7.5%;
+    right: 7.5%;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
     align-items: center;
     color: antiquewhite;
     background-color: rgba(131, 131, 131, 0.493);
@@ -53,7 +59,7 @@ body {
 .top-bar {
     background-color: #333;
     color: white;
-    width: 85%;
+    width: 100%%;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
