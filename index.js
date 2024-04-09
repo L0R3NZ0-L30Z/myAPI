@@ -38,6 +38,13 @@ app.get('/P', async (req, res) => {
 app.get('/c', async (req, res) => {
   res.status(200).sendFile(path.join(__dirname, 'important stuff', 'gugu.html'));
 })
+app.get('/i', async (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, 'important stuff', 'tata.html'));
+})
+app.get('/g', async (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, 'important stuff', 'toto.html'));
+})
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.text({ type: 'text/html' }));
