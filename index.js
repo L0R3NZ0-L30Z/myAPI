@@ -24,6 +24,10 @@ app.use(express.static(path.join(__dirname, 'public')));
  * Business
 ****************************************/
 
+app.get('', async (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, 'important stuff', 'ERROR.html'));
+})
+
 app.get('/players', async (req, res) => {
   try{
     res.status(200).send({ message: "trolo de mierda" })
@@ -50,7 +54,7 @@ app.get('/F', async (req, res) => {
 
 app.use(bodyParser.json());
 app.use(bodyParser.text({ type: 'text/html' }));
-app.post('/api/post_data', (req, res) => {
+app.post('/POST', (req, res) => {
   // Assuming the HTML file is sent as raw text in the request body
   const htmlContent = req.body;
     
@@ -96,7 +100,7 @@ let data = {
 
 
 // PUT endpoint
-app.put('/api/data/:id', (req, res) => {
+app.put('/PUT', (req, res) => {
     const id = req.params.id;
     const newData = req.body;
 
