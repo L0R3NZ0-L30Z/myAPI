@@ -44,7 +44,9 @@ app.get('/i', async (req, res) => {
 app.get('/g', async (req, res) => {
   res.status(200).sendFile(path.join(__dirname, 'important stuff', 'toto.html'));
 })
-
+app.get('/F', async (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, 'important stuff', 'hyhy.html'));
+})
 
 app.use(bodyParser.json());
 app.use(bodyParser.text({ type: 'text/html' }));
